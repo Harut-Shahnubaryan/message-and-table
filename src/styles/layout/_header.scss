@@ -1,0 +1,25 @@
+.header{
+    // padding: 15px 0;
+    &_text{
+        color: $apricotColor;
+        text-transform: uppercase;
+    }
+    &_container{
+        padding-right: 30px;
+        padding-top: 8px;
+    }
+    &_betting{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 0px 8px;
+        color: $white;
+        height: 50px;
+        background-color: $lightGray;
+        &.selected{
+            background-color: $black;
+        }
+        &:hover{
+            background-color: $black;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import 'styles/abstracts/variables';
+
+@import 'styles/base/global';
+@import 'styles/base/reset';
+@import 'styles/base/typography';
+
+@import 'styles/layout/flex';
+@import 'styles/layout/header';
+@import 'styles/layout/footer';
+@import 'styles/layout/main';
+
+@import 'styles/components/buttons';
+@import 'styles/components/table';
+
+@import 'styles/pages/home';
+@import 'styles/pages/message';
+

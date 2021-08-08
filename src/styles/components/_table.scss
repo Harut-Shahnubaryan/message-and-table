@@ -1,0 +1,139 @@
+.table {
+    background-color: $black;
+    position: relative;
+    margin-bottom: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    &_header {
+        padding: 15px;
+        &_texts {
+            color: $white;
+        }
+    }
+    &_main {
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: unset;
+        }
+        background-color: $lightGray;
+        padding: 5px 10px;
+    }
+    &_body {
+        @media only screen and (max-width: 768px) {
+            padding: 10px 10px;
+            flex-direction: column;
+            align-items: unset;
+        }
+        &:hover {
+            background-color: #3f3f3f;
+        }
+
+        transition: 0.03s;
+        padding: 10px 40px;
+        padding-right: 10px;
+        border-bottom: 1px solid $veryLightGray;
+        box-sizing: border-box;
+        &_Count {
+            color: $blueStone;
+            display: inline-block;
+            vertical-align: top;
+        }
+        &_users {
+            line-height: 1.2;
+        }
+        &_Name {
+            color: $white;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        &_tablo {
+            @media only screen and (max-width: 768px) {
+                width: auto;
+            }
+        }
+        &_footer {
+            padding: 4px 0px;
+            background-color: $black;
+            width: 100%;
+        }
+    }
+    .tablo {
+        width: 80px;
+        min-height: 40px;
+        background-image: linear-gradient(#b92b27, #1565c0);
+        text-align: center;
+        color: $white;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        background-size: 300% 100%;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+    .more,
+    .more_block {
+        width: 40px;
+    }
+
+    .more_block {
+        min-height: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: $white;
+        color: $black;
+    }
+    .time {
+        min-width: 50px;
+    }
+    .table-nav-width {
+        width: 80px;
+        text-align: center;
+        @media only screen and (max-width: 768px) {
+            width: 40px;
+        }
+    }
+
+.i-tennis{
+    font-size: 40px;
+}
+.i-soccer{
+    font-size: 30px;
+}
+
+    .arrow-down,
+    .arrow-down-footer {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        &.open {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+
+        .arrow-down-footer {
+            font-size: 18px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

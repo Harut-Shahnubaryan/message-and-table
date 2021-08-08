@@ -1,0 +1,138 @@
+$mainMessageWidth:450px;
+$mainMessageHeight:300px;
+$triangleWidth:300px;
+$triangleHeight:300px;
+$shapeWidth:120px;
+$shapeHeight:120px;
+
+$mainMessageWidthResp:300px;
+$mainMessageHeightResp:200px;
+$triangleWidthResp:200px;
+$triangleHeightResp:200px;
+$shapeWidthResp:80px;
+$shapeHeightResp:80px;
+
+
+.message {
+    height: 100%;
+    position: relative;
+}
+
+.main-message {
+    width: $mainMessageWidth;
+    height: $mainMessageHeight;
+    position: relative;
+    overflow: hidden;
+    @media only screen and (max-width:768px){
+        width: $mainMessageWidthResp;
+        height: $mainMessageHeightResp;
+    }
+    &_up {
+        z-index: 1;
+        width: $triangleWidth;
+        height: $triangleHeight;
+        background-color: $black;
+        position: absolute;
+        left: 50%;
+        top: calc(-50% - 10px);
+        transform: translate(-50%, 0px) rotate(45deg);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        -webkit-transform: translate(-50%, 0px) rotate(45deg);
+        -moz-transform: translate(-50%, 0px) rotate(45deg);
+        -ms-transform: translate(-50%, 0px) rotate(45deg);
+        -o-transform: translate(-50%, 0px) rotate(45deg);
+        @media only screen and (max-width:768px){
+            width: $triangleWidthResp;
+            height: $triangleHeightResp;
+        }
+       
+}
+    &_left {
+        width: $triangleWidth;
+        height: $triangleHeight;
+        background-color: $black;
+        transform: rotate(45deg);
+        position: absolute;
+        left: -50%;
+        //width: 0;
+        //height: 0;
+        //border-top: 150px solid transparent;
+        //border-left: 150px solid $black;
+        //border-bottom: 150px solid transparent;
+        //position: absolute;
+        //top: 0;
+        //left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        @media only screen and (max-width:768px){
+            width: $triangleWidthResp;
+            height: $triangleHeightResp;
+        }
+}
+
+    &_right {
+        width: $triangleWidth;
+        height: $triangleHeight;
+        background-color: $black;
+        transform: rotate(45deg);
+        position: absolute;
+        right: -50%;
+        // width: 0;
+        // height: 0;
+        // border-top: 150px solid transparent;
+        // border-right: 150px solid $black;
+        // border-bottom: 150px solid transparent;
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        @media only screen and (max-width:768px){
+            width: $triangleWidthResp;
+            height: $triangleHeightResp;
+        }
+    }
+    &_down{
+        width: $triangleWidth;
+        height: $triangleHeight;
+        background-color: $black;
+        position: absolute;
+        left: 50%;
+        top: calc(50% + 10px);
+        transform: translate(-50%, 0%) rotate(45deg);
+        -webkit-transform: translate(-50%, 0%) rotate(45deg);
+        -moz-transform: translate(-50%, 0%) rotate(45deg);
+        -ms-transform: translate(-50%, 0%) rotate(45deg);
+        -o-transform: translate(-50%, 0%) rotate(45deg);
+        @media only screen and (max-width:768px){
+            width: $triangleWidthResp;
+            height: $triangleHeightResp;
+        }
+        &:before
+{
+    content: "";
+    width: $shapeWidth;
+    height: $shapeHeight;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #DEDEDE;
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    background-color: #DEDEDE;
+    -webkit-transform: translate(-20%, -20%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+    -webkit-border-radius: 20px;
+    @media only screen and (max-width:768px){
+        width: $shapeWidthResp;
+        height: $shapeHeightResp;
+    }
+}
+}
+
+}

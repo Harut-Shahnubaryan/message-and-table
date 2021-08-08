@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+.body {
+  font-family: $fontbrown;
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $veryLightGray;
+  color: $mistGray;
+}
+
+.mrR-10 {
+  margin-right: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
